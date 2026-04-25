@@ -87,6 +87,10 @@
       padding: 15px;
       margin-top: 20px;
     }
+
+    .filtros button.activo {
+     background-color: #0a1f44;
+  }
   </style>
 </head>
 
@@ -627,6 +631,31 @@ document.querySelectorAll('.card').forEach(card => {
     actualizarUI();
   });
 });
+</script>
+
+<script>
+function filtrarMarca(marca) {
+  const productos = document.querySelectorAll('.card');
+  const botones = document.querySelectorAll('.filtros button');
+
+  // mostrar/ocultar productos
+  productos.forEach(p => {
+    if (marca === 'todos' || p.getAttribute('data-marca') === marca) {
+      p.style.display = 'block';
+    } else {
+      p.style.display = 'none';
+    }
+  });
+
+  // marcar botón activo
+  botones.forEach(btn => btn.classList.remove('activo'));
+  event.target.classList.add('activo');
+}
+
+// 👉 Esto hace que al entrar se muestren todos
+window.onload = function() {
+  document.getElementById('btn-todos').click();
+};
 </script>
 
 
