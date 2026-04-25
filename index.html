@@ -47,7 +47,7 @@
     }
 
     .card {
-      display: flex;
+     display: flex;
      flex-direction: column;
      justify-content: space-between; /* clave */
   
@@ -61,7 +61,13 @@
 
      width: 100%;
      display: block;
-    }
+}
+     .card button {
+       width: 70%;          /* 🔹 hace el botón más angosto */
+       margin: 5px auto;    /* 🔹 centra el botón */
+       display: block;
+       font-size: 14px;
+}
 
     .card img {
       width: 100%;
@@ -70,7 +76,7 @@
       background-color: #f5f5f5;
       padding: 10px;
       border-radius: 10px;
-    }
+}
 
     .precio {
       color: #1e3a8a;
@@ -621,15 +627,17 @@ document.querySelectorAll('.card').forEach(card => {
 
   function actualizarUI() {
     if (estado === 'agotado') {
-      comprarBtn.textContent = "No disponible";
+      comprarBtn.textContent = "Agotado";
       comprarBtn.disabled = true;
-      comprarBtn.style.backgroundColor = "gray";
-      card.style.opacity = "0.6";
+      comprarBtn.style.backgroundColor = "#999";
+      card.style.opacity = "0.5";
+      adminBtn.textContent = "Marcar disponible";
     } else {
       comprarBtn.textContent = "Comprar";
       comprarBtn.disabled = false;
       comprarBtn.style.backgroundColor = "#1e3a8a";
       card.style.opacity = "1";
+      adminBtn.textContent = "Marcar agotado";
     }
   }
 
