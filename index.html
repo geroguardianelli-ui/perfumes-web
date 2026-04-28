@@ -18,21 +18,11 @@
       text-align: center;
     }
 
-nav {
-  background-color: #1e3a8a;
-  padding: 10px;
-  text-align: center;
-}
-
-#buscador {
-  width: 60%;
-  max-width: 400px;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
+    nav {
+      background-color: #1e3a8a;
+      padding: 10px;
+      text-align: center;
+    }
 
     nav a {
       color: white;
@@ -123,68 +113,65 @@ nav {
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
   import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-  document.addEventListener("DOMContentLoaded", async () => {
+  const firebaseConfig = {
+    apiKey: "TU_API_KEY",
+    authDomain: "perfumes-4620c.firebaseapp.com",
+    projectId: "perfumes-4620c",
+    storageBucket: "perfumes-4620c.firebasestorage.app",
+    messagingSenderId: "389694902826",
+    appId: "1:389694902826:web:7dcf14438edf0c93bd6953",
+    measurementId: "G-T4Y57EPX58"
+  };
 
-    const firebaseConfig = {
-      apiKey: "TU_API_KEY",
-      authDomain: "perfumes-4620c.firebaseapp.com",
-      projectId: "perfumes-4620c",
-      storageBucket: "perfumes-4620c.firebasestorage.app",
-      messagingSenderId: "389694902826",
-      appId: "1:389694902826:web:7dcf14438edf0c93bd6953",
-      measurementId: "G-T4Y57EPX58"
-    };
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
 
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+  // 🔐 CONTRASEÑA ADMIN (cambiala por la que quieras)
+  const PASSWORD_ADMIN = "AGESSENCE1";
 
-    const PASSWORD_ADMIN = "AGESSENCE1";
+  document.querySelectorAll('.card').forEach(async card => {
+    const id = card.getAttribute('data-id');
+    const comprarBtn = card.querySelector('.comprar');
+    const adminBtn = card.querySelector('.admin-btn');
 
-    const cards = document.querySelectorAll('.card');
+    const ref = doc(db, "perfumes", id);
+    const snap = await getDoc(ref);
 
-    cards.forEach(async card => {
-      const id = card.getAttribute('data-id');
-      const comprarBtn = card.querySelector('.comprar');
-      const adminBtn = card.querySelector('.admin-btn');
+    let estado = snap.exists() ? snap.data().estado : "disponible";
 
-      const ref = doc(db, "perfumes", id);
-      const snap = await getDoc(ref);
+    function actualizarUI() {
+      if (estado === "agotado") {
+        comprarBtn.textContent = "No disponible";
+        comprarBtn.disabled = true;
+        card.style.opacity = "0.5";
+      } else {
+        comprarBtn.textContent = "Comprar";
+        comprarBtn.disabled = false;
+        card.style.opacity = "1";
+      }
+    }
 
-      let estado = snap.exists() ? snap.data().estado : "disponible";
+    actualizarUI();
 
-      function actualizarUI() {
-        if (estado === "agotado") {
-          comprarBtn.textContent = "No disponible";
-          comprarBtn.disabled = true;
-          card.style.opacity = "0.5";
-        } else {
-          comprarBtn.textContent = "Comprar";
-          comprarBtn.disabled = false;
-          card.style.opacity = "1";
-        }
+    // 🔐 BOTÓN ADMIN CON CONTRASEÑA
+    adminBtn.addEventListener('click', async () => {
+      const input = prompt("Ingrese la contraseña de administrador:");
+
+      if (input !== PASSWORD_ADMIN) {
+        alert("Contraseña incorrecta");
+        return;
       }
 
+      estado = estado === "disponible" ? "agotado" : "disponible";
+      await setDoc(ref, { estado });
       actualizarUI();
+    });
 
-      adminBtn.addEventListener('click', async () => {
-        const input = prompt("Ingrese la contraseña de administrador:");
-
-        if (input !== PASSWORD_ADMIN) {
-          alert("Contraseña incorrecta");
-          return;
-        }
-
-        estado = estado === "disponible" ? "agotado" : "disponible";
-        await setDoc(ref, { estado });
-        actualizarUI();
-      });
-
-      comprarBtn.addEventListener('click', () => {
-        const nombre = card.querySelector('h3').textContent;
-        const mensaje = encodeURIComponent(`Hola, quiero info del perfume ${nombre}`);
-        window.open(`https://ig.me/m/ag.essence__?text=${mensaje}`, '_blank');
-      });
-
+    // 🛒 BOTÓN COMPRAR → Instagram
+    comprarBtn.addEventListener('click', () => {
+      const nombre = card.querySelector('h3').textContent;
+      const mensaje = encodeURIComponent(`Hola, quiero info del perfume ${nombre}`);
+      window.open(`https://ig.me/m/ag.essence__?text=${mensaje}`, '_blank');
     });
 
   });
@@ -198,7 +185,9 @@ nav {
 </header>
 
 <nav>
-  <input type="text" id="buscador" placeholder="🔍 Buscar perfume..." onkeyup="buscarPerfume()">
+  <a href="#">Inicio</a>
+  <a href="#">Productos</a>
+  <a href="#">Contacto</a>
 </nav>
 
 <section class="hero">
@@ -718,22 +707,7 @@ window.onload = function() {
 };
 
 </script>
-<script>
-function buscarPerfume() {
-  const input = document.getElementById("buscador").value.toLowerCase();
-  const productos = document.querySelectorAll(".card");
 
-  productos.forEach(card => {
-    const nombre = card.querySelector("h3").textContent.toLowerCase();
-
-    if (nombre.includes(input)) {
-      card.style.display = "flex";
-    } else {
-      card.style.display = "none";
-    }
-  });
-}
-</script>
 
 </body>
 </html>
