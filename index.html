@@ -206,7 +206,7 @@ nav {
   <p>Elegancia y frescura en cada fragancia</p>
 </section>
 
-<div class="filtros">
+<div class="filtros filtros-marca">
   <button id="btn-todos" class="activo" onclick="filtrarMarca('todos', this)">Todos</button>
   <button onclick="filtrarMarca('lattafa', this)">Lattafa</button>
   <button onclick="filtrarMarca('afnan', this)">Afnan</button>
@@ -215,8 +215,8 @@ nav {
   <button onclick="filtrarMarca('al-haramain', this)">Al-Haramain</button>
 </div>
 
-<div class="filtros">
-  <button onclick="filtrarGenero('todos', this)">Todos</button>
+<div class="filtros filtros-genero">
+  <button class="activo" onclick="filtrarGenero('todos', this)">Todos</button>
   <button onclick="filtrarGenero('masculino', this)">Hombre</button>
   <button onclick="filtrarGenero('femenino', this)">Mujer</button>
 </div>
@@ -702,28 +702,50 @@ nav {
 
 
 <script>
-function filtrarMarca(marca, boton) {
+let marcaActual = "todos";
+let generoActual = "todos";
+
+function aplicarFiltros() {
   const productos = document.querySelectorAll('.card');
-  const botones = document.querySelectorAll('.filtros button');
 
   productos.forEach(p => {
-    if (marca === 'todos' || p.getAttribute('data-marca') === marca) {
-      p.style.display = 'flex';
+    const marca = p.getAttribute('data-marca');
+    const genero = p.getAttribute('data-genero');
+
+    const coincideMarca = (marcaActual === "todos" || marca === marcaActual);
+    const coincideGenero = (generoActual === "todos" || genero === generoActual);
+
+    if (coincideMarca && coincideGenero) {
+      p.style.display = "flex";
     } else {
-      p.style.display = 'none';
+      p.style.display = "none";
     }
   });
-
-  botones.forEach(btn => btn.classList.remove('activo'));
-  boton.classList.add('activo');
 }
 
-// 👉 Esto hace que al entrar se muestren todos
-window.onload = function() {
-  filtrarMarca('todos', document.getElementById('btn-todos'));
-};
+function filtrarMarca(marca, boton) {
+  marcaActual = marca;
 
+  document.querySelectorAll('.filtros-marca button')
+    .forEach(btn => btn.classList.remove('activo'));
+
+  boton.classList.add('activo');
+
+  aplicarFiltros();
+}
+
+function filtrarGenero(genero, boton) {
+  generoActual = genero;
+
+  document.querySelectorAll('.filtros-genero button')
+    .forEach(btn => btn.classList.remove('activo'));
+
+  boton.classList.add('activo');
+
+  aplicarFiltros();
+}
 </script>
+
 <script>
 function buscarPerfume() {
   const input = document.getElementById("buscador").value.toLowerCase();
@@ -741,23 +763,6 @@ function buscarPerfume() {
 }
 </script>
 
-<script>
-function filtrarGenero(genero, boton) {
-  const productos = document.querySelectorAll('.card');
-  const botones = boton.parentElement.querySelectorAll('button');
-
-  productos.forEach(p => {
-    if (genero === 'todos' || p.getAttribute('data-genero') === genero) {
-      p.style.display = 'flex';
-    } else {
-      p.style.display = 'none';
-    }
-  });
-
-  botones.forEach(btn => btn.classList.remove('activo'));
-  boton.classList.add('activo');
-}
-</script>
 
 </body>
 </html>
