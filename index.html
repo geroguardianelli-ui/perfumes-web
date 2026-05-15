@@ -491,6 +491,7 @@ nav {
       const id = card.getAttribute('data-id');
       const comprarBtn = card.querySelector('.comprar');
       const adminBtn = card.querySelector('.admin-btn');
+      const descripcionBtn = card.querySelector('.descripcion-btn');
 
       const ref = doc(db, "perfumes", id);
       const snap = await getDoc(ref);
@@ -529,6 +530,30 @@ nav {
         const mensaje = encodeURIComponent(`Hola, quiero info del perfume ${nombre}`);
         window.open(`https://ig.me/m/ag.essence__?text=${mensaje}`, '_blank');
       });
+
+      descripcionBtn.addEventListener('click', () => {
+
+  const perfume = descripciones[id];
+
+  if (!perfume) {
+    alert("Descripción no disponible");
+    return;
+  }
+
+  alert(
+`✨ ${card.querySelector('h3').textContent} ✨
+
+🔹 Notas de salida:
+${perfume.salida}
+
+🔹 Notas de corazón:
+${perfume.corazon}
+
+🔹 Notas de base:
+${perfume.base}`
+  );
+
+});
 
     });
 
