@@ -1098,6 +1098,12 @@ ${perfume.base}`
   <p>Elegancia y frescura en cada fragancia</p>
 </section>
 
+<div class="filtros filtros-tipo">
+  <button onclick="filtrarTipo('todos', this)" class="activo">Todos</button>
+  <button onclick="filtrarTipo('arabe', this)">Árabe</button>
+  <button onclick="filtrarTipo('disenador', this)">Diseñador</button>
+</div>
+
 <div class="filtros filtros-marca">
   <button id="btn-todos" class="activo" onclick="filtrarMarca('todos', this)">Todos</button>
   <button onclick="filtrarMarca('lattafa', this)">Lattafa</button>
@@ -1109,6 +1115,10 @@ ${perfume.base}`
   <button onclick="filtrarMarca('maison-alhambra', this)">Maison-Alhambra</button>
   <button onclick="filtrarMarca('rayhaan', this)">Rayhaan</button>
   <button onclick="filtrarMarca('bharara', this)">Bharara</button>
+
+  <button onclick="filtrarMarca('jpg', this)">Jean Paul Gaultier</button>
+  <button onclick="filtrarMarca('azzaro', this)">Azzaro</button>
+  <button onclick="filtrarMarca('valentino', this)">Valentino</button>
 </div>
 
 <div class="filtros filtros-genero">
@@ -1119,7 +1129,7 @@ ${perfume.base}`
 
 <section class="productos">
 
-    <div class="card" data-id="lattafa-asad" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-asad" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/1f1b8d9a1b49678555bea203c2f52e39/1/5/151905-a-asad-edp-100ml.jpg">
       <h3>Lattafa Asad</h3>
       <p class="precio">$60.000 ARS</p>
@@ -1128,7 +1138,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
     
-    <div class="card" data-id="lattafa-asad-bourbon" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-asad-bourbon" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/002/348/405/products/lattafa-asad-bourbon-perfume-bottle-against-white-background-07da62789abfa149e217447451842944-1024-1024.webp">
       <h3>Lattafa Asad Bourbon</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1137,7 +1147,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-asad-zanzibar" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-asad-zanzibar" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIvSGJwEKi2meudFXSMBpUGd_7s-3lno_0Q&s">
       <h3>Lattafa Asad Zanzibar</h3>
       <p class="precio">$45.000 ARS</p>
@@ -1146,7 +1156,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
     
-    <div class="card" data-id="lattafa-asad-elixir" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-asad-elixir" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.117616.jpg">
       <h3>Lattafa Asad Elixir</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1155,7 +1165,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-khamra" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-khamra" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.75805.jpg">
       <h3>Lattafa Khamrah</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1164,7 +1174,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-khamra-qahwa" data-marca="lattafa"data-genero="masculino">
+    <div class="card" data-id="lattafa-khamra-qahwa" data-marca="lattafa"data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.88175.jpg">
       <h3>Lattafa Khamrah Qahwa</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1173,7 +1183,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-his-confession" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-his-confession" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAQr71FTv3ZcOMUNHldMdfGwlAJdQ89FvXZQ&s">
       <h3>Lattafa His Confession Black</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1182,7 +1192,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-her-confession" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-her-confession" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPbS_yrKRkcW8QIissWOABjYfZsYyBxy1iQA&s">
       <h3>Lattafa Her Confession White</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1191,7 +1201,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-the-kingdom" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-the-kingdom" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_715812-MLA82693195300_032025-C.jpg">
       <h3>Lattafa The Kingdom</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1200,7 +1210,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-qaed-al-fursan" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-qaed-al-fursan" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/1abc29ef5d81b8dc31891d99548028f1dbf2d71908413eeaf776dde273a830c6431537.jpg">
       <h3>Lattafa Qaed Al Fursan</h3>
       <p class="precio">$38.000 ARS</p>
@@ -1209,7 +1219,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-qaed-al-fursan-unlimited" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-qaed-al-fursan-unlimited" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/46800abeabf9a35412c6e5a6fe579e525f1af7ee1a5db9376342551e6744a28c431537.jpg">
       <h3>Lattafa Qaed Al Fursan Unlimited</h3>
       <p class="precio">$38.000 ARS</p>
@@ -1218,7 +1228,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-fakhar-black" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-fakhar-black" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/c7ee38034c478e7fc22b593d468adfa519488be76f814eedca1c74a09b84989a431537.jpg">
       <h3>Lattafa Fakhar Black</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1227,7 +1237,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-fakhar-platin" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-fakhar-platin" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/47f3df1046816506188f597d5f227530636728b858810a4075e44a5a2220a233431537.jpg">
       <h3>Lattafa Fakhar Platin</h3>
       <p class="precio">$54.000 ARS</p>
@@ -1236,7 +1246,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-fakhar-extrait-gold" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-fakhar-extrait-gold" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/c131b30656533ab40bf6552a082e3ce1dc4e50970d349e1c7e1912eea716eb8d431537.jpg">
       <h3>Lattafa Fakhar Extrait Gold</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1245,7 +1255,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-fakhar-rose" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-fakhar-rose" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/004/407/494/products/fakhar-femme-2540dbde970698f72f17142414764249-640-0.webp">
       <h3>Lattafa Fakhar Rose</h3>
       <p class="precio">$75.000 ARS</p>
@@ -1254,7 +1264,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-badee-al-oud-amethyst" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-badee-al-oud-amethyst" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://www.parfumerie.com.ar/pub/media/catalog/product/1/5/151914-a-badee-al-oud-amethyst-edp-100ml.jpg">
       <h3>Lattafa Badee Al Oud Amethyst</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1263,7 +1273,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-badee-al-oud-for-glory" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-badee-al-oud-for-glory" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/004/407/494/products/oud-for-glory-a27d0d4cc30843530417100964116395-1024-1024.webp">
       <h3>Lattafa Badee Al Oud For Glory</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1272,7 +1282,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-badee-al-oud-honor-and-glory" data-marca="lattafa" data-genero="masculino">
+    <div class="card" data-id="lattafa-badee-al-oud-honor-and-glory" data-marca="lattafa" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_908909-MLA92465887356_092025-C.jpg">
       <h3>Lattafa Badee Al Oud Honor And Glory</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1281,7 +1291,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-badee-al-oud-noble-blush" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-badee-al-oud-noble-blush" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.98937.jpg">
       <h3>Lattafa Badee Al Oud Noble Blush</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1290,7 +1300,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-badee-al-oud-sublime" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-badee-al-oud-sublime" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.83309.jpg">
       <h3>Lattafa Badee Al Oud Sublime</h3>
       <p class="precio">$55.000 ARS</p>
@@ -1299,7 +1309,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-yara" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-yara" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.76880.jpg">
       <h3>Lattafa Yara</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1308,7 +1318,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-yara-tous" data-marca="lattafa"data-genero="femenino">
+    <div class="card" data-id="lattafa-yara-tous" data-marca="lattafa"data-genero="femenino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJohQQqeQL12VA9kw_z-Dzs1VW56geR8u8Q&s">
       <h3>Lattafa Yara Tous</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1317,7 +1327,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-yara-moi" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-yara-moi" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://www.anikashop.com.ar/product_images/b/858/Yara_Moi__97957_zoom.jpg">
       <h3>Lattafa Yara Moi</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1326,7 +1336,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-yara-candy" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-yara-candy" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/004/928/032/products/010a1eqvsp_720x-61c16e751ee2b68a7517242520809310-640-0.webp">
       <h3>Lattafa Yara Candy</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1335,7 +1345,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-yara-elixir" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-yara-elixir" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYIBzffsIIwThIwapgtPqEioqSDH-OSXIww&s">
       <h3>Lattafa Yara Elixir</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1344,7 +1354,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-eclaire" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-eclaire" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_854522-MLU76885472895_062024-O.webp">
       <h3>Lattafa Eclaire</h3>
       <p class="precio">$60.000 ARS</p>
@@ -1353,7 +1363,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-eclaire-pistache" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-eclaire-pistache" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/004/407/494/products/eclaire-pistache-cf685c97fd4d20814117651136828333-640-0.webp">
       <h3>Lattafa Eclaire Pistache</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1362,7 +1372,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="lattafa-eclaire-banoffi" data-marca="lattafa" data-genero="femenino">
+    <div class="card" data-id="lattafa-eclaire-banoffi" data-marca="lattafa" data-genero="femenino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_765421-MLA91825729181_092025-O.webp">
       <h3>Lattafa Eclaire Banoffi</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1372,7 +1382,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="afnan-9pm" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-9pm" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/1f1b8d9a1b49678555bea203c2f52e39/1/5/156230-a-9pm-black-edp-100ml.jpg">
       <h3>Afnan 9PM</h3>
       <p class="precio">$60.000 ARS</p>
@@ -1381,7 +1391,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-9am-dive" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-9am-dive" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/004/928/032/products/9am-dive-01_1080x1080-b826b8144ca344eac417252902024831-1024-1024.webp">
       <h3>Afnan 9AM Dive</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1390,7 +1400,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-9pm-rebel" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-9pm-rebel" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/002/348/405/products/afnan-9pm-rebel-frente-c029eca9ae3062144417751647466845-1024-1024.webp">
       <h3>Afnan 9PM Rebel</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1399,7 +1409,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-9pm-elixir" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-9pm-elixir" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.111894.jpg">
       <h3>Afnan 9PM Elixir</h3>
       <p class="precio">$82.000 ARS</p>
@@ -1408,7 +1418,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-9pm-night-out" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-9pm-night-out" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.123313.jpg">
       <h3>Afnan 9PM Night Out</h3>
       <p class="precio">$105.000 ARS</p>
@@ -1417,7 +1427,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-supremacy-collectors" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-supremacy-collectors" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_Q_NP_985472-MLA81251660599_122024-O.webp">
       <h3>Afnan Supremacy Collectors</h3>
       <p class="precio">$130.000 ARS</p>
@@ -1426,7 +1436,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-supremacy-collectors-silver-man" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-supremacy-collectors-silver-man" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://m.media-amazon.com/images/I/61ee47UapVL._AC_UF1000,1000_QL80_.jpg">
       <h3>Afnan Supremacy Collectors Silver Man</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1435,7 +1445,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-supremacy-collectors-not-only-intense" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-supremacy-collectors-not-only-intense" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://m.media-amazon.com/images/I/51p1NXjm6iL._SS1000_.jpg">
       <h3>Afnan Supremacy Collectors Not Only Intense (150ML)</h3>
       <p class="precio">$95.000 ARS</p>
@@ -1444,7 +1454,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-supremacy-collectors-gold" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-supremacy-collectors-gold" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://m.media-amazon.com/images/I/31HJkl2wlGL._SL160_.jpg">
       <h3>Afnan Supremacy Collectors Gold</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1453,7 +1463,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-supremacy-collectors-pink" data-marca="afnan" data-genero="femenino">
+    <div class="card" data-id="afnan-supremacy-collectors-pink" data-marca="afnan" data-genero="femenino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.70705.jpg">
       <h3>Afnan Supremacy Collectors Pink</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1462,7 +1472,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-supremacy-collectors-gala" data-marca="afnan" data-genero="femenino">
+    <div class="card" data-id="afnan-supremacy-collectors-gala" data-marca="afnan" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/004/407/494/products/supremacy-gala-14a6118e11d23d165417140934721797-640-0.webp">
       <h3>Afnan Supremacy Collectors Gala</h3>
       <p class="precio">$80.000 ARS</p>
@@ -1471,7 +1481,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-turathi-electric" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-turathi-electric" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_999860-MLA92894381936_092025-O.webp">
       <h3>Afnan Turathi Electric (90ML)</h3>
       <p class="precio">$76.000 ARS</p>
@@ -1480,7 +1490,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-turathi-brown" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-turathi-brown" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.84403.jpg">
       <h3>Afnan Turathi Brown</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1489,7 +1499,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="afnan-turathi-blue" data-marca="afnan" data-genero="masculino">
+    <div class="card" data-id="afnan-turathi-blue" data-marca="afnan" data-genero="masculino" data-tipo="arabe">
       <img src="https://www.parfumerie.com.ar/pub/media/catalog/product/1/5/156240-a-turathi-blue-edp-90ml.jpg">
       <h3>Afnan Turathi Blue (90ML)</h3>
       <p class="precio">$72.000 ARS</p>
@@ -1499,7 +1509,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="armaf-club-de-nuit-intense-man" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-club-de-nuit-intense-man" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://www.parfumerie.com.ar/pub/media/catalog/product/1/5/155114-a-club-de-nuit-intense-men-edt-105ml.jpg">
       <h3>Armaf Club de Nuit Intense Man</h3>
       <p class="precio">$75.000 ARS</p>
@@ -1508,7 +1518,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-club-de-nuit-urban-man-elixir" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-club-de-nuit-urban-man-elixir" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_933045-MLA74650236558_022024-O.webp">
       <h3>Armaf Club de Nuit Urban Man Elixir</h3>
       <p class="precio">$75.000 ARS</p>
@@ -1517,7 +1527,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-club-de-nuit-untold" data-marca="armaf" data-genero="femenino">
+    <div class="card" data-id="armaf-club-de-nuit-untold" data-marca="armaf" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/001/071/596/products/dhthtthth-copia1-4d77234c69ebad2eb116796216205565-480-0.webp">
       <h3>Armaf Club de Nuit Untold EDP</h3>
       <p class="precio">$80.000 ARS</p>
@@ -1526,7 +1536,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-club-de-nuit-precieux" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-club-de-nuit-precieux" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/002/708/808/products/arabe-41-d5deb91501bd7d5c5e17225601378560-1024-1024.webp">
       <h3>Armaf Club de Nuit Precieux EDP (55ML)</h3>
       <p class="precio">$97.500 ARS</p>
@@ -1535,7 +1545,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-club-de-nuit-iconic" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-club-de-nuit-iconic" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1z0gPZ6S2EOFd7H01jTGjwJWJE0MfYNNFA&s">
       <h3>Armaf Club de Nuit Iconic EDP</h3>
       <p class="precio">$80.000 ARS</p>
@@ -1544,7 +1554,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-club-de-nuit-sillage" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-club-de-nuit-sillage" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.88212.jpg">
       <h3>Armaf Club de Nuit Sillage EDP</h3>
       <p class="precio">$75.000 ARS</p>
@@ -1553,7 +1563,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-club-de-nuit-milestone" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-club-de-nuit-milestone" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://lh3.googleusercontent.com/proxy/YvUKuZCUtuX8Mzf5TDz90_9g1SQ1IJFdjyyLGpS2Myqsx0j0oObM80g2Znqf87NwrcAPPcFWjU9mzzxR3V2Bvx2Yw0P3F1ryRxskV4YxISKEznAHBB7l4oxLmscyTACJO6b8K1D_Utt1eHsMqR2MfGObc3f0zw8Ur1s53wRxML0uU-QXQJaBh4GIq8-C2LS5mA">
       <h3>Armaf Club de Nuit Milestone</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1562,7 +1572,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-homme" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-homme" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.64464.jpg">
       <h3>Armaf Odyssey Homme</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1571,7 +1581,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-homme-white-edition" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-homme-white-edition" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.64466.jpg">
       <h3>Armaf Odyssey Homme White Edition</h3>
       <p class="precio">$53.000 ARS</p>
@@ -1580,7 +1590,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-mandarin-sky" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-mandarin-sky" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdr1Nywn7kGmPrpkhxSyE9cUDDkpbR3sn2Jg&s">
       <h3>Armaf Odyssey Mandarin Sky</h3>
       <p class="precio">$60.000 ARS</p>
@@ -1589,7 +1599,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-mandarin-sky-elixir" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-mandarin-sky-elixir" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8dhOsLa5AI3F9HOiwXLTuOHYMEMzafjrAg&s">
       <h3>Armaf Odyssey Mandarin Sky Elixir</h3>
       <p class="precio">$93.000 ARS</p>
@@ -1598,7 +1608,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-mega" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-mega" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_857800-MLA53835336652_022023-O.webp">
       <h3>Armaf Odyssey Mega</h3>
       <p class="precio">$52.000 ARS</p>
@@ -1607,7 +1617,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-tyrant" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-tyrant" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.83135.jpg">
       <h3>Armaf Odyssey Tyrant</h3>
       <p class="precio">$45.000 ARS</p>
@@ -1616,7 +1626,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-aqua" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-aqua" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_753958-MLU69767271971_062023-O.webp">
       <h3>Armaf Odyssey Aqua</h3>
       <p class="precio">$74.000 ARS</p>
@@ -1625,7 +1635,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-candee" data-marca="armaf" data-genero="femenino">
+    <div class="card" data-id="armaf-odyssey-candee" data-marca="armaf" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/003/226/824/products/1024-x-1024-px-2025-05-09t182318-489-7327e5362c6795d94817468258022327-1024-1024.webp">
       <h3>Armaf Odyssey Candee</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1634,7 +1644,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-dubai-chocolate" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-dubai-chocolate" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/1f1b8d9a1b49678555bea203c2f52e39/p/s/ps162241-b-odyssey-dubai-chocolat-edp-100ml.jpg">
       <h3>Armaf Odyssey Dubai Chocolate</h3>
       <p class="precio">$40.000 ARS</p>
@@ -1643,7 +1653,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-limoni" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-limoni" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.98695.jpg">
       <h3>Armaf Odyssey Limoni</h3>
       <p class="precio">$52.000 ARS</p>
@@ -1652,7 +1662,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="armaf-odyssey-go-mango" data-marca="armaf" data-genero="masculino">
+    <div class="card" data-id="armaf-odyssey-go-mango" data-marca="armaf" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_653810-CBT95076054781_102025-O.webp">
       <h3>Armaf Odyssey Go Mango</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1662,7 +1672,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="rasasi-hawas-for-him" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-for-him" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/005/003/704/products/proyecto-nuevo-44-d2fb122a3d259afaf217240884571178-1024-1024.webp">
       <h3>Rasasi Hawas For Him</h3>
       <p class="precio">$60.000 ARS</p>
@@ -1671,7 +1681,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-verde" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-verde" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/002/708/808/products/arabe-2025-11-22t161606-621-112b09e39093f1570a17638413620448-640-0.webp">
       <h3>Rasasi Hawas Verde</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1680,7 +1690,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-eclat" data-marca="rasasi" data-genero="femenino">
+    <div class="card" data-id="rasasi-hawas-eclat" data-marca="rasasi" data-genero="femenino" data-tipo="arabe">
       <img src="https://perfumescardales.com.ar/wp-content/uploads/2025/07/Perfumes-Decants-22.jpg">
       <h3>Rasasi Hawas Eclat</h3>
       <p class="precio">$70.000 ARS</p>
@@ -1689,7 +1699,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-black" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-black" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/003/226/824/products/hawas_black_sep_600x600-57929cbdd43a6d6c9217283295598920-640-0.webp">
       <h3>Rasasi Hawas Black</h3>
       <p class="precio">$72.000 ARS</p>
@@ -1698,7 +1708,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-ice" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-ice" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/003/226/824/products/1024-x-1024-px-2025-05-10t143127-148-cf372c2ee2877e7a6d17468982913630-1024-1024.webp">
       <h3>Rasasi Hawas Ice</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1707,7 +1717,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-tropical" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-tropical" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://pardohogar.vtexassets.com/arquivos/ids/800579/image-62e63df04b114273a09b1f301c54490c.jpg?v=638981355648400000">
       <h3>Rasasi Hawas Tropical</h3>
       <p class="precio">$82.000 ARS</p>
@@ -1716,7 +1726,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div> 
 
-    <div class="card" data-id="rasasi-hawas-kobra" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-kobra" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.112706.jpg">
       <h3>Rasasi Hawas Kobra</h3>
       <p class="precio">$90.000 ARS</p>
@@ -1725,7 +1735,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div> 
 
-    <div class="card" data-id="rasasi-hawas-fire" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-fire" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.101665.jpg">
       <h3>Rasasi Hawas Fire</h3>
       <p class="precio">$80.000 ARS</p>
@@ -1734,7 +1744,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div> 
 
-    <div class="card" data-id="rasasi-hawas-malibu" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-malibu" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_950771-MLA106903796458_022026-O.webp">
       <h3>Rasasi Hawas Malibu</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1743,7 +1753,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div> 
 
-    <div class="card" data-id="rasasi-hawas-elixir" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-elixir" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_725294-MLA92935901169_092025-O.webp">
       <h3>Rasasi Hawas Elixir</h3>
       <p class="precio">$72.000 ARS</p>
@@ -1752,7 +1762,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-london" data-marca="rasasi" data-genero="masculino">
+    <div class="card" data-id="rasasi-hawas-london" data-marca="rasasi" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.123217.jpg">
       <h3>Rasasi Hawas London</h3>
       <p class="precio">$90.000 ARS</p>
@@ -1761,7 +1771,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-for-her" data-marca="rasasi" data-genero="femenino">
+    <div class="card" data-id="rasasi-hawas-for-her" data-marca="rasasi" data-genero="femenino" data-tipo="arabe">
       <img src="https://acdn-us.mitiendanube.com/stores/002/348/405/products/photoroom-20251126_133853-a45a8fff003647bc0f17641764269110-1024-1024.webp">
       <h3>Rasasi Hawas For Her</h3>
       <p class="precio">$50.000 ARS</p>
@@ -1770,7 +1780,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-pink" data-marca="rasasi" data-genero="femenino">
+    <div class="card" data-id="rasasi-hawas-pink" data-marca="rasasi" data-genero="femenino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.119907.jpg">
       <h3>Rasasi Hawas Pink</h3>
       <p class="precio">$87.000 ARS</p>
@@ -1779,8 +1789,8 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rasasi-hawas-diva" data-marca="rasasi" data-genero="femenino">
-      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hYC056Z1DHc_llOAMyk2tVqWbT7xUrmuVQ&s">
+    <div class="card" data-id="rasasi-hawas-diva" data-marca="rasasi" data-genero="femenino" data-tipo="arabe">
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hYC056Z1DHc_llOAMyk2tVqWbT7xUrmuVQ&s>
       <h3>Rasasi Hawas Diva</h3>
       <p class="precio">$100.000 ARS</p>
        <button class="comprar">Comprar</button>
@@ -1789,7 +1799,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="al-haramain-amber-oud-gold-edition" data-marca="al-haramain" data-genero="masculino">
+    <div class="card" data-id="al-haramain-amber-oud-gold-edition" data-marca="al-haramain" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bW9uwTSu5nrgW_o1KGqWun6iLjNmZnNSWA&s">
       <h3>Al Haramain Amber Oud Gold Edition</h3>
       <p class="precio">$105.000 ARS</p>
@@ -1798,7 +1808,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="al-haramain-amber-oud-dubai-night" data-marca="al-haramain" data-genero="masculino">
+    <div class="card" data-id="al-haramain-amber-oud-dubai-night" data-marca="al-haramain" data-genero="masculino" data-tipo="arabe">
       <img src="https://m.media-amazon.com/images/I/41HsdNlckCL._SL160_.jpg">
       <h3>Al Haramain Amber Oud Dubai Night</h3>
       <p class="precio">$86.000 ARS</p>
@@ -1807,7 +1817,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="al-haramain-amber-oud-aqua-dubai" data-marca="al-haramain" data-genero="masculino">
+    <div class="card" data-id="al-haramain-amber-oud-aqua-dubai" data-marca="al-haramain" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15ie154U53SYzj2YVaaBLp0o0v-hlL-ZaUA&s">
       <h3>Al Haramain Amber Oud Aqua Dubai</h3>
       <p class="precio">$120.000 ARS</p>
@@ -1816,7 +1826,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="al-haramain-amber-oud-carbon-edition" data-marca="al-haramain" data-genero="masculino">
+    <div class="card" data-id="al-haramain-amber-oud-carbon-edition" data-marca="al-haramain" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/28a17dfe1d68fa6d7f34588ace75f9fdc531f2584dc31ff219abeb07a8bb692b431537.jpg">
       <h3>Al Haramain Amber Oud Carbon Edition</h3>
       <p class="precio">$110.000 ARS</p>
@@ -1825,7 +1835,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="al-haramain-amber-oud-private-edition" data-marca="al-haramain" data-genero="masculino">
+    <div class="card" data-id="al-haramain-amber-oud-private-edition" data-marca="al-haramain" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_Q_NP_632557-CBT73647009895_122023-O.webp">
       <h3>Al Haramain Amber Oud Private Edition</h3>
       <p class="precio">$120.000 ARS</p>
@@ -1835,7 +1845,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="french-avenue-atlantis" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-atlantis" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume/o.113595.jpg">
       <h3>French Avenue Atlantis</h3>
       <p class="precio">$106.000 ARS</p>
@@ -1844,7 +1854,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-irida-extrait" data-marca="french-avenue" data-genero="femenino">
+    <div class="card" data-id="french-avenue-irida-extrait" data-marca="french-avenue" data-genero="femenino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_620123-MLU78457330916_082024-O.webp">
       <h3>French Avenue Irida Extrait</h3>
       <p class="precio">$80.000 ARS</p>
@@ -1853,7 +1863,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-chaos-extrait" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-chaos-extrait" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://m.media-amazon.com/images/I/316glLCHNtL._SL160_.jpg">
       <h3>French Avenue Chaos Extrait</h3>
       <p class="precio">$78.000 ARS</p>
@@ -1862,7 +1872,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-aether-extrait" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-aether-extrait" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTloV6mxjAe9NQcmn09ZrYewIBU7nvPoSgVeQ&s">
       <h3>French Avenue Aether Extrait</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1871,7 +1881,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-spectre" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-spectre" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/b472ee6d38dd642080af765693deaae74f948bb11b4ec7a966afa2de9e7f4a46431537.webp">
       <h3>French Avenue Spectre (80ML)</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1880,7 +1890,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-ghost-spectre" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-ghost-spectre" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/110c681de2c9268d67041b5e64537f9b2a3707863eceb54e58685103efeeaf3f431537.jpg">
       <h3>French Avenue Ghost Spectre (80ML)</h3>
       <p class="precio">$82.000 ARS</p>
@@ -1889,7 +1899,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-spectre-wraith" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-spectre-wraith" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/eea549c7b4a08dc485a69c9e6ba1682f90248a047a44aa8bfe28104ebb7a44fd431537.webp">
       <h3>French Avenue Spectre Wraith (80ML)</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1898,7 +1908,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-spectre-marron" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-spectre-marron" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/4bb0282e32260242e338784c74b7e119f28a78d2a9b5859411dd3e55cd673876431537.jpg">
       <h3>French Avenue Spectre Marron (80ML)</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1907,7 +1917,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-veneno-black" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-veneno-black" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/4a02c53ffc899b214479daa6afd187fa48bcd99c59c53e5a4225d37a5114a131431537.jpg">
       <h3>French Avenue Veneno Black</h3>
       <p class="precio">$100.000 ARS</p>
@@ -1916,7 +1926,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-veneno-bianco" data-marca="french-avenue" data-genero="femenino">
+    <div class="card" data-id="french-avenue-veneno-bianco" data-marca="french-avenue" data-genero="femenino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_838065-MLA86898667431_062025-O.webp">
       <h3>French Avenue Veneno Bianco</h3>
       <p class="precio">$85.000 ARS</p>
@@ -1925,7 +1935,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-veneno-scarlet" data-marca="french-avenue" data-genero="femenino">
+    <div class="card" data-id="french-avenue-veneno-scarlet" data-marca="french-avenue" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/9ba7ae807f89522f73d32b5ae9bf134afde3b745897bcd88366f0fe4349f5e55431537.webp">
       <h3>French Avenue Veneno Scarlet</h3>
       <p class="precio">$90.000 ARS</p>
@@ -1934,7 +1944,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-vulcan-feu" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-vulcan-feu" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/a8ea86629ea90f1ae61e6b460df6875bb347dfa30a3d795e8f20919b049c30ea431537.jpg">
       <h3>French Avenue Vulcan Feu</h3>
       <p class="precio">$103.000 ARS</p>
@@ -1943,7 +1953,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-vulcan-sable" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-vulcan-sable" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/b0af1884c4ce9e42cf1c20d8f23536d67741cfcdfaca0f8e28ec0ff424276148431537.jpg">
       <h3>French Avenue Vulcan Sable</h3>
       <p class="precio">$60.000 ARS</p>
@@ -1952,7 +1962,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-vulcan-sable" data-marca="french-avenue" data-genero="femenino">
+    <div class="card" data-id="french-avenue-vulcan-sable" data-marca="french-avenue" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/de8946adbd7f82d020b9359937857e76bccbb5676c7a47d8e27e8a3f2eb423c6431537.jpg">
       <h3>French Avenue Vulcan Baie</h3>
       <p class="precio">$80.000 ARS</p>
@@ -1961,7 +1971,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-liquid-brun" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-liquid-brun" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQeK2uu-D96Wl_XJGhMRGkq3PBAhj6fIeCw&s">
       <h3>French Avenue Liquid Brun</h3>
       <p class="precio">$90.000 ARS</p>
@@ -1970,7 +1980,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-azzure-aoud" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-azzure-aoud" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/3da9cb7ab0eff7884220d49326b0b1330183e50297ebc2fd87f6a59ac5521d32431537.jpg">
       <h3>French Avenue Azzure Aoud</h3>
       <p class="precio">$72.000 ARS</p>
@@ -1979,7 +1989,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="french-avenue-cocoa-morado" data-marca="french-avenue" data-genero="masculino">
+    <div class="card" data-id="french-avenue-cocoa-morado" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/0c7ffc1b1e60ac5de31e69062d3ad7758730e06556e0e9574a2b5d2f5bd37543431537.jpg">
       <h3>French Avenue Cocoa Morado</h3>
       <p class="precio">$65.000 ARS</p>
@@ -1989,7 +1999,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="maison-alhambra-jean-lowe-azure" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-jean-lowe-azure" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_880857-MLA82269183177_022025-O.webp">
       <h3>Maison Alhambra Jean Lowe Azure</h3>
       <p class="precio">$75.000 ARS</p>
@@ -1998,7 +2008,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-jean-lowe-fraiche" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-jean-lowe-fraiche" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/a83d2e4eacc90cd508df0e82c185a35bf2516844269b810ef419a4a1cc4fbec3431537.webp">
       <h3>Maison Alhambra Jean Lowe Fraiche</h3>
       <p class="precio">$45.000 ARS</p>
@@ -2007,7 +2017,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-jean-lowe-immortal" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-jean-lowe-immortal" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/f51019285408bb520468f2a4fa8ce8657f4fcd3ef03119b869210aa7d7e19ca7431537.webp">
       <h3>Maison Alhambra Jean Lowe Immortal</h3>
       <p class="precio">$55.000 ARS</p>
@@ -2016,7 +2026,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-jean-lowe-maitre" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-jean-lowe-maitre" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/e7e2062861d22be741435d455fc5142a6792bbe960ae4f8f794ba1b993391c31431537.jpg">
       <h3>Maison Alhambra Jean Lowe Maitre</h3>
       <p class="precio">$55.000 ARS</p>
@@ -2025,7 +2035,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-jean-lowe-vibe" data-marca="maison-alhambra" data-genero="femenino">
+    <div class="card" data-id="maison-alhambra-jean-lowe-vibe" data-marca="maison-alhambra" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/4a42e091504024e54f575b53d1946f8bdab92c4b101f4d78ebb54c5ca4320396431537.png">
       <h3>Maison Alhambra Jean Lowe Vibe</h3>
       <p class="precio">$65.000 ARS</p>
@@ -2034,7 +2044,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-jean-lowe-noir" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-jean-lowe-noir" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/80bb872788e88638362659cf2aba841309301d2fbe111c18b9f305c156b7c7e9431537.webp">
       <h3>Maison Alhambra Jean Lowe Noir</h3>
       <p class="precio">$50.000 ARS</p>
@@ -2043,7 +2053,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-sceptre-amazonite" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-sceptre-amazonite" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/eb1705316568fda235601613b96e1cc2c75ae6b1f3b66c2eb26f688f844beab3431537.jpg">
       <h3>Maison Alhambra Sceptre Amazonite</h3>
       <p class="precio">$46.000 ARS</p>
@@ -2052,7 +2062,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-sceptre-bronzite" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-sceptre-bronzite" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/49641a6d3bebc6082d90791ef1347b56ac0f8c7868f05d437a1bd131816dabef431537.jpg">
       <h3>Maison Alhambra Sceptre Bronzite</h3>
       <p class="precio">$50.000 ARS</p>
@@ -2061,7 +2071,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-sceptre-desert" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-sceptre-desert" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/c10c8170cef14be13cea76192c4c6fca0d6e15da24c6264d2747d43985d49161431537.webp">
       <h3>Maison Alhambra Sceptre Desert</h3>
       <p class="precio">$50.000 ARS</p>
@@ -2070,7 +2080,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-sceptre-oceana" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-sceptre-oceana" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/80e42ba2fc50be6e3d91098d0fa4a1833eb5500ce39a311e941dd1ce2bb2be6b431537.webp">
       <h3>Maison Alhambra Sceptre Oceana</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2079,7 +2089,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-sceptre-malachite" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-sceptre-malachite" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/2a809a0b88a17a37b791354207cc22771eeda8075caafe78d8a1af623f977e41431537.jpg">
       <h3>Maison Alhambra Sceptre Malachite</h3>
       <p class="precio">$55.000 ARS</p>
@@ -2088,7 +2098,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-glacier-pour-homme" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-glacier-pour-homme" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/dc9da473addf5cf1ab4429f83be83858e74f7cc76f5d51f3cf0b82852b525969431537.jpg">
       <h3>Maison Alhambra Glacier Pour Homme</h3>
       <p class="precio">$38.000 ARS</p>
@@ -2097,7 +2107,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-glacier-ultra" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-glacier-ultra" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_849094-MLU73225124030_122023-O.webp">
       <h3>Maison Alhambra Glacier Ultra</h3>
       <p class="precio">$46.000 ARS</p>
@@ -2106,7 +2116,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-glacier-le-noir" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-glacier-le-noir" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_801884-MLU73007304952_112023-O.webp">
       <h3>Maison Alhambra Glacier Le Noir</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2115,7 +2125,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-glacier-gold" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-glacier-gold" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_701095-MLA100021934392_122025-O.webp">
       <h3>Maison Alhambra Glacier Gold</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2124,7 +2134,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-glacier-bold" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-glacier-bold" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_Q_NP_917293-MLU73266637502_122023-O.webp">
       <h3>Maison Alhambra Glacier Bold</h3>
       <p class="precio">$50.000 ARS</p>
@@ -2133,7 +2143,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-glacier-bella" data-marca="maison-alhambra" data-genero="femenino">
+    <div class="card" data-id="maison-alhambra-glacier-bella" data-marca="maison-alhambra" data-genero="femenino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_655867-MLA83985431460_052025-O.webp">
       <h3>Maison Alhambra Glacier Bella</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2142,7 +2152,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-philos-pura" data-marca="maison-alhambra" data-genero="femenino">
+    <div class="card" data-id="maison-alhambra-philos-pura" data-marca="maison-alhambra" data-genero="femenino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_731245-MLA82642600084_032025-C.jpg">
       <h3>Maison Alhambra Philos Pura</h3>
       <p class="precio">$56.000 ARS</p>
@@ -2151,7 +2161,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-philos-messenger" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-philos-messenger" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/7b7167d814df65cdf533fb3370ea7fece6db70fae5be7da7d406b302ec541c2b431537.jpg">
       <h3>Maison Alhambra Philos Messenger</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2160,7 +2170,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-philos-opus-noir" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-philos-opus-noir" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/6f6f1b9d47963cc654abf3464551f87275cf94139e1fa6e9336f8c204a8396cb431537.jpg">
       <h3>Maison Alhambra Philos Opus Noir</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2169,7 +2179,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-philos-rosso" data-marca="maison-alhambra" data-genero="femenino">
+    <div class="card" data-id="maison-alhambra-philos-rosso" data-marca="maison-alhambra" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/2f87a62afa533176eef1facbbd3dba3171e022ee3d8c2d75e3edda7fa5faf0ea431537.jpg">
       <h3>Maison Alhambra Philos Rosso</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2178,7 +2188,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-philos-shine" data-marca="maison-alhambra" data-genero="femenino">
+    <div class="card" data-id="maison-alhambra-philos-shine" data-marca="maison-alhambra" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/f2ce9e148f4242eee8c955057e7afcbb566358c2589a3b9923c1beba6b47e72d431537.jpg">
       <h3>Maison Alhambra Philos Shine</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2187,7 +2197,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-yeah-man" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-yeah-man" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/453fac8e932e0b50825415450b5081e456f7dd039df44a3200979b71abb0f874431537.webp">
       <h3>Maison Alhambra Yeah Man</h3>
       <p class="precio">$47.000 ARS</p>
@@ -2196,7 +2206,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-yeah-man-parfum" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-yeah-man-parfum" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/6839ed974fd30798dfc9008e2ce525f38aeda6721a8ce9f04460ff57e69562da431537.jpg">
       <h3>Maison Alhambra Yeah Man Parfum</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2205,7 +2215,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-salvo-intense" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-salvo-intense" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/b5f3a133be0dcba67cdd2b5e6f0561b4a9497cd3fe7c70a8da8766ce0e8d6d06431537.jpg">
       <h3>Maison Alhambra Salvo Intense</h3>
       <p class="precio">$45.000 ARS</p>
@@ -2214,7 +2224,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="maison-alhambra-extravagant-lover" data-marca="maison-alhambra" data-genero="masculino">
+    <div class="card" data-id="maison-alhambra-extravagant-lover" data-marca="maison-alhambra" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvt0w8UOkjmM6bLpoppW_ONDzO-g_yU3FMQ&s">
       <h3>Maison Alhambra Extravagant Lover</h3>
       <p class="precio">$40.000 ARS</p>
@@ -2224,7 +2234,7 @@ ${perfume.base}`
     </div>
 
 
-    <div class="card" data-id="rayhaan-jungle-vibe" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-jungle-vibe" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/1311d460c5ac688ded8a278ad55721f09c1b7c8f9bbc27d58bb1c53e95b1bbf1431537.webp">
       <h3>Rayhaan Jungle Vibe</h3>
       <p class="precio">$80.000 ARS</p>
@@ -2233,7 +2243,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-tropical-vibe" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-tropical-vibe" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.118507.jpg">
       <h3>Rayhaan Tropical Vibe</h3>
       <p class="precio">$100.000 ARS</p>
@@ -2242,7 +2252,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-valhalla" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-valhalla" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/2613aea4f20c7f60a594035de2e436fd84db841b9c7ea538679f43ac12c4ab27431537.jpg">
       <h3>Rayhaan Valhalla</h3>
       <p class="precio">$65.000 ARS</p>
@@ -2251,7 +2261,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-corium" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-corium" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/21d323b2275330e9734fb97b1ecdf7ddb7769dac19b9cf3c4331474cd8694d72431537.jpg">
       <h3>Rayhaan Corium</h3>
       <p class="precio">$65.000 ARS</p>
@@ -2260,7 +2270,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-pretty-in-pink" data-marca="rayhaan" data-genero="femenino">
+    <div class="card" data-id="rayhaan-pretty-in-pink" data-marca="rayhaan" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/8a7891b2ff3874e314ba27aa2a94f73957b6f2f1a790e127600eaa6ea3340f90431537.jpg">
       <h3>Rayhaan Pretty In Pink</h3>
       <p class="precio">$55.000 ARS</p>
@@ -2269,7 +2279,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-elixir" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-elixir" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/afd741867601224e3b13a1ea46774394d3e1852b4e5aee6923c2883c6778f0e9431537.jpg">
       <h3>Rayhaan Elixir</h3>
       <p class="precio">$82.500 ARS</p>
@@ -2278,7 +2288,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-dark-leather" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-dark-leather" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLsbR6Nj4HYeo18pr2GofdoQr8MSIW9ceheA&s">
       <h3>Rayhaan Dark Leather</h3>
       <p class="precio">$63.000 ARS</p>
@@ -2287,7 +2297,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-obsidian" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-obsidian" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://cdn2.jomashop.com/media/catalog/product/cache/b3e31d40bbb1abcc90b26106659d5d3f/r/a/rayhaan-mens-obsidian-edp-spray-33-oz-fragrances-6297001571323.jpg?width=800&height=800">
       <h3>Rayhaan Obsidian</h3>
       <p class="precio">$100.000 ARS</p>
@@ -2296,7 +2306,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-cordova" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-cordova" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSf_73eU6qrLbNMIJcVMmuQHm6ajq4bRGedA&s">
       <h3>Rayhaan Cordova</h3>
       <p class="precio">$63.000 ARS</p>
@@ -2305,7 +2315,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-terra" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-terra" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh6au-fRCJY7K3TGkmw0f3qQtC2fSS34ZNYw&s">
       <h3>Rayhaan Terra</h3>
       <p class="precio">$108.000 ARS</p>
@@ -2314,7 +2324,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-tiger" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-tiger" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSk9w6j3NHoIr38yeXjNWIJ2QVkldvz4z16Q&s">
       <h3>Rayhaan Tiger</h3>
       <p class="precio">$82.500 ARS</p>
@@ -2323,7 +2333,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-nocturno-elixir" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-nocturno-elixir" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9avhEPNga7jpyLypO7Xu9565YyKplXynnUQ&s">
       <h3>Rayhaan Nocturno Elixir</h3>
       <p class="precio">$107.000 ARS</p>
@@ -2332,7 +2342,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-pacific" data-marca="rayhaan" data-genero="masculino">
+    <div class="card" data-id="rayhaan-pacific" data-marca="rayhaan" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSekHXF_XL64ptA-61LNy-OmoGOxBV7-XsDIA&s">
       <h3>Rayhaan Pacific</h3>
       <p class="precio">$68.000 ARS</p>
@@ -2341,7 +2351,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="rayhaan-ayka" data-marca="rayhaan" data-genero="femenino">
+    <div class="card" data-id="rayhaan-ayka" data-marca="rayhaan" data-genero="femenino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQU65fPawDwKgcpSV-1RKzhhsE-l11QOoH9A&s">
       <h3>Rayhaan Ayka</h3>
       <p class="precio">$66.000 ARS</p>
@@ -2351,7 +2361,7 @@ ${perfume.base}`
     </div>
     
 
-    <div class="card" data-id="bharara-viking-rio" data-marca="bharara" data-genero="masculino">
+    <div class="card" data-id="bharara-viking-rio" data-marca="bharara" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKETHWVjaRTF2ZY-bZi6LU8ARgbZUL7Kr4A&s">
       <h3>Bharara Viking Rio</h3>
       <p class="precio">$92.000 ARS</p>
@@ -2360,7 +2370,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-viking-dubai" data-marca="bharara" data-genero="masculino">
+    <div class="card" data-id="bharara-viking-dubai" data-marca="bharara" data-genero="masculino" data-tipo="arabe">
       <img src="https://http2.mlstatic.com/D_NQ_NP_959271-MLA69947271918_062023-O.webp">
       <h3>Bharara Viking Dubai</h3>
       <p class="precio">$92.000 ARS</p>
@@ -2369,7 +2379,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-viking-kashmir" data-marca="bharara" data-genero="masculino">
+    <div class="card" data-id="bharara-viking-kashmir" data-marca="bharara" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/c589ab89da0e8e3943a1c64440a3dae24cdd26b21155b0afea8f67681c40583c431537.jpg">
       <h3>Bharara Viking Kashmir</h3>
       <p class="precio">$100.000 ARS</p>
@@ -2378,7 +2388,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-viking-cairo" data-marca="bharara" data-genero="masculino">
+    <div class="card" data-id="bharara-viking-cairo" data-marca="bharara" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/af7d02f1dcd6e654a78f88b46942f1b2ae0869d293d3031770e78531feebd947431537.jpg">
       <h3>Bharara Viking Cairo</h3>
       <p class="precio">$92.000 ARS</p>
@@ -2387,7 +2397,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-viking-beirut" data-marca="bharara" data-genero="masculino">
+    <div class="card" data-id="bharara-viking-beirut" data-marca="bharara" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/e22c40166a551bf5df98c152a91a5ca00f6dbf86cda4c4dc37905d5b004b5431431537.png">
       <h3>Bharara Viking Beirut</h3>
       <p class="precio">$92.000 ARS</p>
@@ -2396,7 +2406,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-rose" data-marca="bharara" data-genero="femenino">
+    <div class="card" data-id="bharara-rose" data-marca="bharara" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/3109c68b4b1b9d26747ad0bbc079e1a67ee3840dab2036c2099a2747664f568c431537.jpg">
       <h3>Bharara Rose</h3>
       <p class="precio">$100.000 ARS</p>
@@ -2405,7 +2415,7 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-king" data-marca="bharara" data-genero="masculino">
+    <div class="card" data-id="bharara-king" data-marca="bharara" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/62f38e11d586b5842faf8a89ebd1eb35424014af310fab5c3e63508f4d014e98431537.jpg">
       <h3>Bharara King</h3>
       <p class="precio">$120.000 ARS</p>
@@ -2414,10 +2424,37 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
-    <div class="card" data-id="bharara-queen" data-marca="bharara" data-genero="femenino">
+    <div class="card" data-id="bharara-queen" data-marca="bharara" data-genero="femenino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/00456210b9569328328cbc62d4c46e68139e964cc02d9946da973c9bc2180034431537.jpg">
       <h3>Bharara Queen</h3>
       <p class="precio">$95.000 ARS</p>
+       <button class="comprar">Comprar</button>
+       <button class="descripcion-btn">Descripción</button>
+       <button class="admin-btn">Cambiar estado</button>
+    </div>
+
+    <div class="card" data-id="azzaro-wanted-edp" data-marca="azzaro" data-genero="masculino" data-tipo="diseñador">
+      <img src="https://juleriaque.vtexassets.com/arquivos/ids/226670/1005242-1.jpg?v=638989924136200000">
+      <h3>Azzaro Wanted Eau de Parfum</h3>
+      <p class="precio">$115.000 ARS</p>
+       <button class="comprar">Comprar</button>
+       <button class="descripcion-btn">Descripción</button>
+       <button class="admin-btn">Cambiar estado</button>
+    </div>
+
+    <div class="card" data-id="azzaro-wanted-edt" data-marca="azzaro" data-genero="masculino" data-tipo="diseñador">
+      <img src="https://cdn.batitienda.com/baticloud/images/product_picture_64c1017a5db34f8399b6d681a56799a2_637886724154645506_0_m.jpg">
+      <h3>Azzaro Wanted Eau de Toilette</h3>
+      <p class="precio">$115.000 ARS</p>
+       <button class="comprar">Comprar</button>
+       <button class="descripcion-btn">Descripción</button>
+       <button class="admin-btn">Cambiar estado</button>
+    </div>
+
+    <div class="card" data-id="azzaro-the-most-wanted" data-marca="azzaro" data-genero="masculino" data-tipo="diseñador">
+      <img src="https://www.megatone.net/images/Articulos/443/327/08/zoom2x/MKT9508NOC-1.webp">
+      <h3>Azzaro The Most Wanted</h3>
+      <p class="precio">$155.000 ARS</p>
        <button class="comprar">Comprar</button>
        <button class="descripcion-btn">Descripción</button>
        <button class="admin-btn">Cambiar estado</button>
@@ -2437,6 +2474,7 @@ ${perfume.base}`
 <script>
 let marcaActual = "todos";
 let generoActual = "todos";
+let tipoActual = "todos";
 
 function aplicarFiltros() {
   const productos = document.querySelectorAll('.card');
@@ -2444,11 +2482,13 @@ function aplicarFiltros() {
   productos.forEach(p => {
     const marca = p.getAttribute('data-marca');
     const genero = p.getAttribute('data-genero');
+    const tipo = p.getAttribute('data-tipo');
 
     const coincideMarca = (marcaActual === "todos" || marca === marcaActual);
     const coincideGenero = (generoActual === "todos" || genero === generoActual);
+    const coincideTipo = (tipoActual === "todos" || tipo === tipoActual);
 
-    if (coincideMarca && coincideGenero) {
+    if (coincideMarca && coincideGenero && coincideTipo) {
       p.style.display = "flex";
     } else {
       p.style.display = "none";
@@ -2471,6 +2511,17 @@ function filtrarGenero(genero, boton) {
   generoActual = genero;
 
   document.querySelectorAll('.filtros-genero button')
+    .forEach(btn => btn.classList.remove('activo'));
+
+  boton.classList.add('activo');
+
+  aplicarFiltros();
+}
+
+function filtrarTipo(tipo, boton) {
+  tipoActual = tipo;
+
+  document.querySelectorAll('.filtros-tipo button')
     .forEach(btn => btn.classList.remove('activo'));
 
   boton.classList.add('activo');
