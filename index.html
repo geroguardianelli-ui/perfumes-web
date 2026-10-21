@@ -759,6 +759,12 @@ nav {
    base: "praline, ambroxan, madera de gaiac y almizcle"
   },
 
+  "french-avenue-liquid-brun-limited-edition": {
+   salida: "cardamomo, lavanda y citricos",
+   corazon: "flor de azahar, madera de gaiac y rosa",
+   base: "vainilla, haba tonka, ambar y musgo de roble"
+  },
+
   "french-avenue-azzure-aoud": {
    salida: "maracuya, frutas y rosa",
    corazon: "oud, benjui y pachuli",
@@ -1197,6 +1203,12 @@ nav {
    base: "vetiver"
   },
 
+  "valentino-uomo-born-in-roma-intense": {
+   salida: "vainilla y notas ambaradas",
+   corazon: "lavanda",
+   base: "vetiver"
+  },
+
   "dior-sauvage-elixir": {
    salida: "pomelo, canela, nuez moscada y cardamomo",
    corazon: "lavanda",
@@ -1207,6 +1219,12 @@ nav {
    salida: "pimienta rosa, bayas de enebro y violeta",
    corazon: "toffee, canela, lavanda y salvia",
    base: "vainilla, haba tonka, gamuza y amberwood"
+  },
+
+  "ysl-y-edp": {
+   salida: "manzana, jengibre y bergamota",
+   corazon: "salvia, bayas de enebro y geranio",
+   base: "haba tonka, cedro, vetiver, olíbano y pachuli"
   }
 
 };
@@ -1325,6 +1343,7 @@ ${perfume.base}`
   <button onclick="filtrarMarca('valentino', this)">Valentino</button>
   <button onclick="filtrarMarca('dior', this)">Dior</button>
   <button onclick="filtrarMarca('armani', this)">Armani</button>
+  <button onclick="filtrarMarca('ysl', this)">Yves Saint Laurent</button>
 </div>
 
 <div class="filtros filtros-genero">
@@ -2180,7 +2199,7 @@ ${perfume.base}`
     <div class="card" data-id="french-avenue-ghost-spectre" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/110c681de2c9268d67041b5e64537f9b2a3707863eceb54e58685103efeeaf3f431537.jpg">
       <h3>French Avenue Ghost Spectre (80ML)</h3>
-      <p class="precio">$85.000 ARS</p>
+      <p class="precio">$95.000 ARS</p>
        <button class="comprar">Comprar</button>
        <button class="descripcion-btn">Descripción</button>
        <button class="admin-btn">Cambiar estado</button>
@@ -2234,7 +2253,7 @@ ${perfume.base}`
     <div class="card" data-id="french-avenue-vulcan-feu" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://d22fxaf9t8d39k.cloudfront.net/a8ea86629ea90f1ae61e6b460df6875bb347dfa30a3d795e8f20919b049c30ea431537.jpg">
       <h3>French Avenue Vulcan Feu</h3>
-      <p class="precio">$110.000 ARS</p>
+      <p class="precio">$100.000 ARS</p>
        <button class="comprar">Comprar</button>
        <button class="descripcion-btn">Descripción</button>
        <button class="admin-btn">Cambiar estado</button>
@@ -2261,7 +2280,16 @@ ${perfume.base}`
     <div class="card" data-id="french-avenue-liquid-brun" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQeK2uu-D96Wl_XJGhMRGkq3PBAhj6fIeCw&s">
       <h3>French Avenue Liquid Brun</h3>
-      <p class="precio">$95.000 ARS</p>
+      <p class="precio">$103.000 ARS</p>
+       <button class="comprar">Comprar</button>
+       <button class="descripcion-btn">Descripción</button>
+       <button class="admin-btn">Cambiar estado</button>
+    </div>
+
+    <div class="card" data-id="french-avenue-liquid-brun-limited-edition" data-marca="french-avenue" data-genero="masculino" data-tipo="arabe">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs5SWz8IjkrS2hsE4o3w4ti89G8GM_KJSlzH3J72YyUlJYxdYRY8BcHP-z&s=10">
+      <h3>French Avenue Liquid Brun Limited Edition (150ML)</h3>
+      <p class="precio">$155.000 ARS</p>
        <button class="comprar">Comprar</button>
        <button class="descripcion-btn">Descripción</button>
        <button class="admin-btn">Cambiar estado</button>
@@ -2930,6 +2958,15 @@ ${perfume.base}`
        <button class="admin-btn">Cambiar estado</button>
     </div>
 
+    <div class="card" data-id="valentino-uomo-born-in-roma-intense" data-marca="valentino" data-genero="masculino" data-tipo="disenador">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_976103-MLU74223979876_022024-O.webp">
+      <h3>Valentino Uomo Born In Roma Intense</h3>
+      <p class="precio">$325.000 ARS</p>
+       <button class="comprar">Comprar</button>
+       <button class="descripcion-btn">Descripción</button>
+       <button class="admin-btn">Cambiar estado</button>
+    </div>
+
 
     <div class="card" data-id="dior-sauvage-elixir" data-marca="dior" data-genero="masculino" data-tipo="disenador">
       <img src="https://http2.mlstatic.com/D_NQ_NP_881518-MLU74409100575_022024-O.webp">
@@ -2945,6 +2982,16 @@ ${perfume.base}`
       <img src="https://rougeb2car.vtexassets.com/arquivos/ids/164117-800-auto?v=638769580457200000&width=800&height=auto&aspect=true">
       <h3>Stronger With You Intensely</h3>
       <p class="precio">$230.000 ARS</p>
+       <button class="comprar">Comprar</button>
+       <button class="descripcion-btn">Descripción</button>
+       <button class="admin-btn">Cambiar estado</button>
+    </div>
+
+
+    <div class="card" data-id="ysl-y-edp" data-marca="ysl" data-genero="masculino" data-tipo="disenador">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_826996-MLU73204499763_122023-O.webp">
+      <h3>YSL Y EDP</h3>
+      <p class="precio">$285.000 ARS</p>
        <button class="comprar">Comprar</button>
        <button class="descripcion-btn">Descripción</button>
        <button class="admin-btn">Cambiar estado</button>
